@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "forgottenfaith",
+	"version": "${version}",
+	"name": "Forgotten Faith",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Malah8949"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/forgottenfaith/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.malah.forgottenfaith.ForgottenFaith"
+		],
+		"fabric-datagen": [
+			"net.malah.forgottenfaith.ForgottenFaithDataGenerator"
+		],
+		"client": [
+			"net.malah.forgottenfaith.ForgottenFaithClient"
+		]
+	},
+	"mixins": [
+		"forgottenfaith.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
